@@ -16,9 +16,9 @@ public class Info {
 	
 	// <scope> <return_type> <method_name>
 	public String getBio() {
-		return template											// ${fName} ${lName} is ${age}
-				.replace("${fName}", this.firstName)				// John ${lName} is ${age}
-				.replace("${lName}", this.lastName)				// John Squarepants is ${age}
+		return template																			// ${fName} ${lName} is ${age}
+				.replace("${fName}", this.firstName)						// John ${lName} is ${age}
+				.replace("${lName}", this.lastName)							// John Squarepants is ${age}
 				.replace("${age}", Integer.toString(this.age));	// John Squarepants is 32;
 	}
 }
